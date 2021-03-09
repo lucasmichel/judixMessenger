@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        style="@style/Base.V7.Theme.AppCompat"
+        android:background="@drawable/selector_list"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:minHeight="?android:attr/listPreferredItemHeight">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:id="@+id/imageViewPrioridadeMandado"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51dp"
+                    android:id="@+id/imageViewIntimadoSecretaria"
+                    android:src="@android:drawable/btn_star_big_on"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:minHeight="?android:attr/listPreferredItemHeight">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Id: 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtIdMandado" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0000.000.00"
+                    android:id="@+id/txtNumeroMandado" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destinatario"
+                    android:id="@+id/txtDestinatario" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MedidaJudicial"
+                    android:id="@+id/txtMedidaJudical" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/01/1999"
+                    android:id="@+id/txtDatamandado" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bairro Novo"
+                    android:id="@+id/txtBairroMandado" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPontoReferenciaMandado" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMapaMandado"
+            android:src="@mipmap/ic_action_location"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="#00ffffff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAgendamento"
+            android:src="@mipmap/ic_action_calendar_month"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="#00ffffff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAcaoMandado"
+            android:src="@mipmap/ic_action_foursquare"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="#00ffffff" />-->
+
+    </TableRow>
+
+</TableLayout>

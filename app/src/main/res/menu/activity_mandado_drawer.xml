@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+
+    </group>-->
+
+    <item android:title="Opções">
+        <menu>
+            <!--<item
+                android:id="@+id/openDadosDestinatario"
+                android:icon="@mipmap/ic_action_dados_destinatario"
+                android:title="Dados Receptor" /> -->
+
+            <item
+                android:id="@+id/openAssinaturaMandado"
+                android:icon="@mipmap/ic_action_assinatura"
+                android:title="Recolher Assinaturas" />
+
+            <item
+                android:id="@+id/openImpressaoMandado"
+                android:icon="@mipmap/ic_action_imprimir"
+                android:title="Imprimir Mandado" />
+
+            <item
+                android:id="@+id/openFotos"
+                android:icon="@mipmap/ic_action_fotos"
+                android:title="Anexar Fotos" />
+
+            <item
+                android:id="@+id/openAnexos"
+                android:icon="@mipmap/ic_action_copy"
+                android:title="Documentos Anexos" />
+
+            <item
+                android:id="@+id/openImpressaoRodape"
+                android:icon="@mipmap/ic_action_imprimir"
+                android:title="Imprimir Rodapé" />
+
+            <item
+                android:id="@+id/openCertidao"
+                android:icon="@mipmap/ic_action_certidao"
+                android:title="Emitir Certidão" />
+
+            <item
+                android:id="@+id/openCompartilhar"
+                android:icon="@mipmap/ic_action_avancar"
+                android:title="Compartilhar" />
+
+            <item
+                android:id="@+id/openCaixaEconomica"
+                android:icon="@mipmap/ic_action_shield"
+                android:title="Pacjud" />
+
+            <item
+                android:id="@+id/voltarListaMandado"
+                android:icon="@mipmap/ic_action_voltar"
+                android:title="Voltar" />
+
+        </menu>
+    </item>
+</menu>

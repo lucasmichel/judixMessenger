@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+
+    <corners android:radius="2dp" />
+    <gradient android:startColor="@color/common_action_bar_splitter" android:centerColor="@color/common_google_signin_btn_text_dark_pressed" android:endColor="@color/common_action_bar_splitter" android:angle="90" />
+
+</shape>

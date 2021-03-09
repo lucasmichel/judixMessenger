@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.alg.judix">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".telaArquivosAnexos.viewPdfArquivoAnexo" ></activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".telaOficial.OficialActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_configuracao"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MenuActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".telaAssinatura.Tela"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_assinatura"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".telaOficial.AlterarDadosOficialActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_alterar_dados_oficial" />
+        <activity
+            android:name=".telaOficial.AlterarSenhaOficialActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_alterar_senha_oficial" />
+        <activity
+            android:name=".telaMandado.ListaMandadoActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mandado" />
+        <activity android:name=".telaMandado.DocumentoMandadoHtmlActivity" />
+        <activity
+            android:name=".telaMandado.MapaMandadoActivity"
+            android:label="@string/title_activity_mapa_mandado" />
+        <activity
+            android:name=".telaMandado.MandadoActivity"
+            android:label="@string/title_activity_mandado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".telaMandado.AgendamentoMandado" />
+        <activity android:name=".telaMandado.AgendamentoMandadoLista" />
+        <activity
+            android:name=".telaCertidoes.ListaCertidoes"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:label="@string/title_activity_lista_certidao" />
+        <activity
+            android:name=".telaMandado.FotosMandado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".telaCertidoes.CertidaoDoMandado"
+            android:label="" />
+        <activity
+            android:name=".telaMandado.DocumentoDestinatarioMandado"
+            android:label="@string/title_activity_documento_destinatario_mandado" />
+        <activity android:name=".telaCertidoes.dialog_salvar_alteracao_certidao" />
+        <activity
+            android:name=".telaAssinaturasMandado.ListaAssinaturasMandadoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_lista_assinatura_mandado" />
+        <activity
+            android:name=".telaAssinaturasMandado.DadosAssinaturaMandadoPartesRelacionadas"
+            android:label="@string/title_activity_dados_assinatuas_mandado" />
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBi9hsBSSkVgArr2NRX0UlK25CmDHMlPEY"/>
+        -->
+        <activity android:name=".telaNotificacaoMandado.NotificacaoMandado" />
+        <activity android:name=".telaNotificacaoMandado.ListaNotificacaoMandado" />
+        <activity android:name=".telaMandado.ListaBluetoothActivity" />
+        <activity android:name=".telaArquivosAnexos.ListaArquivosAnexos" />
+        <activity
+            android:name=".telaNotificacaoMandado.ListaTodasNotificacoes"
+            android:label="@string/title_activity_lista_todas_notificacoes" />
+        <activity android:name=".telaOficial.RelatorioProdutividadeActivity" />
+        <activity android:name=".telaOficial.ListaRelatorios" />
+        <activity android:name=".telaOficial.ReltorioMandadoPorPeriodo" />
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorFundoSpalshScreen"
+    tools:context="com.app.alg.judix.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageView3"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/splash_screen_judix" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="CPF"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/editTextCpf"
+                android:layout_alignLeft="@+id/editTextCpf"
+                android:layout_alignStart="@+id/editTextCpf"
+                android:textColor="@color/banco"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextCpf"
+                android:layout_above="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_alignEnd="@+id/editTextSenha"
+                android:inputType="number"
+                android:text="975.765.383-76"
+                tools:ignore="HardcodedText"
+                android:layout_weight="1"
+
+                android:background="@drawable/fundo_edit_text_branco"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Senha"
+                android:id="@+id/textView"
+                android:layout_above="@+id/editTextSenha"
+                android:layout_alignLeft="@+id/editTextSenha"
+                android:layout_alignStart="@+id/editTextSenha"
+                android:textColor="@color/banco"
+                android:paddingTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextSenha"
+                android:layout_above="@+id/buttonLogin"
+                android:layout_centerHorizontal="true"
+                android:text="123456"
+                android:background="@drawable/fundo_edit_text_branco"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/buttonLogin"
+                android:layout_marginBottom="69dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/editTextSenha"
+                android:layout_alignStart="@+id/editTextSenha"
+                android:drawableTop="@mipmap/ic_action_key"
+                android:background="@drawable/selector_button"
+                android:textAllCaps="false"
+                android:padding="@dimen/place_autocomplete_prediction_secondary_text"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_alignRight="@+id/editTextSenha"
+                android:layout_alignEnd="@+id/editTextSenha"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--android:inputType="number"-->
+
+</RelativeLayout>

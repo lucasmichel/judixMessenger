@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itemAbrirMandado"
+        android:title="Abrir"/>
+
+    <item android:id="@+id/itemAgendamentoMandado"
+        android:title="Agendar"/>
+
+    <item android:id="@+id/itemAvisarMandado"
+        android:title="Notificar"/>
+
+    <!--<item android:id="@+id/itemLocalizacaoMandado"
+        android:title="Localização"/>-->
+
+    <item android:id="@+id/itemMapaMandado"
+        android:title="Localizar"/>
+
+
+    <item android:id="@+id/itemRedirecionarMandado"
+        android:title="Redirecionar"/>
+
+    <item android:id="@+id/itemRequisitarMandado"
+        android:title="Requisitar"/>
+
+    <item android:id="@+id/itemVisualizarMandado"
+        android:title="Visualizar DGO"/>
+
+    <!--<item android:id="@+id/itemFotoMandado"
+        android:title="Fotos"/>-->
+
+    <!--<item android:id="@+id/itemCertidaoMandado"
+        android:title="Certidão"/>-->
+
+</menu>

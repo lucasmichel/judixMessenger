@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@drawable/round_shape_btn_laranja" android:color="@color/banco" ></item>
+    <item android:state_pressed="true" android:drawable="@drawable/round_shape_btn_2_laranja" android:color="@color/banco" ></item>
+    <item android:drawable="@drawable/round_shape_btn_3_laranja" android:color="@color/banco" ></item>
+</selector>

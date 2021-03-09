@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/colorFundoSpalshScreen"
+    android:id="@+id/linearLayouTituloMandadoClicado"
+    android:layout_margin="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a Test"
+        android:id="@+id/tituloDialog"
+        android:textSize="16sp"
+        android:textColor="@color/banco"
+        android:padding="20dp" />
+
+</LinearLayout>

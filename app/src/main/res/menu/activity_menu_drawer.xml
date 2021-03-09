@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group> @mipmap/ic_action_copy -->
+
+    <item android:title="Opções">
+        <menu>
+            <item
+                android:id="@+id/exibirMandados"
+
+                android:icon="@mipmap/ic_action_mandados"
+                android:title="Entradas" />
+
+            <item
+                android:id="@+id/exibirMandadoPendente"
+                android:icon="@mipmap/ic_action_mandados_pendentes"
+                android:title="Pendentes" />
+
+            <item
+                android:id="@+id/exibirMandadoConcluido"
+                android:icon="@mipmap/ic_action_mandados_concluidos"
+                android:title="Concluídos" />
+
+
+            <item
+                android:id="@+id/exibirNotificacoes"
+                android:icon="@mipmap/ic_action_abrir"
+                android:title="Notificações" />
+
+
+            <item
+                android:id="@+id/relatorios"
+                android:icon="@mipmap/ic_action_relatorios"
+                android:title="Relatórios" />
+
+
+            <item
+                android:id="@+id/configuracaoAplicativo"
+                android:icon="@mipmap/ic_action_configuracao"
+                android:title="Configurações" />
+
+            <item
+                android:id="@+id/sair"
+                android:icon="@mipmap/ic_action_sair"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+
+
+</menu>

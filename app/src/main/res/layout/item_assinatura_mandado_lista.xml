@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        style="@style/Base.V7.Theme.AppCompat"
+        android:background="@drawable/selector_list"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp">
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+
+            android:id="@+id/imageViewTipoCertidao"
+            android:src="@mipmap/ic_action_assinatura"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:layout_column="0"/>
+
+
+
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:minHeight="?android:attr/listPreferredItemHeight">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="nomeAssinatura"
+                    android:id="@+id/nomeAssinaturaMandado"
+                    android:maxLines="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_column="1"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tipoAssinaturaMandado"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="tipoAssinatura" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tipoDocumentoAssinaturaMandado"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:text="tipo|documentoAssinatura" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+
+    </TableRow>
+</TableLayout>

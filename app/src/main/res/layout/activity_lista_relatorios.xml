@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telaOficial.ListaRelatorios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produtividade"
+            android:id="@+id/relatorioProdutividade"
+            android:layout_marginBottom="5dp"
+
+            android:drawableTop="@mipmap/ic_action_relatorios"
+            android:background="@drawable/selector_button"
+            android:textAllCaps="false"
+            android:padding="@dimen/place_autocomplete_prediction_secondary_text"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="20dp" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mandados Por Período"
+            android:id="@+id/relatorioMandadoPorPeriodo"
+            android:layout_marginBottom="5dp"
+
+            android:drawableTop="@mipmap/ic_action_relatorios"
+            android:background="@drawable/selector_button"
+            android:textAllCaps="false"
+            android:padding="@dimen/place_autocomplete_prediction_secondary_text"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="20dp" />
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

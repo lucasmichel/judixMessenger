@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="1">
+
+    <TableRow
+        style="@style/Base.V7.Theme.AppCompat"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_list"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewNotificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:minHeight="?android:attr/listPreferredItemHeight">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <!-- android:maxLines="2" -->
+
+                <!--
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                -->
+
+                <!--
+
+                android:scrollHorizontally="false"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+
+                -->
+
+
+                <TextView
+                    android:id="@+id/txtDescricaoNotificacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginTop="5dp"
+
+                    android:maxLines="2"
+                    android:text="numeroMandado"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                <!-- <TextView
+                    android:id="@+id/txtDescricaoNotificacao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_column="1"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+            </TableRow>
+
+        </TableLayout>
+
+
+    </TableRow>
+</TableLayout>

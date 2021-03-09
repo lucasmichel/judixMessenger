@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.alg.judix.telaMandado.DocumentoDestinatarioMandado">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Titulo"
+                android:id="@+id/textViewTituloDocumentoDestinatario"
+                android:padding="13dp" />
+
+            <TextView
+                android:text="Destinatário:"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewDestinatario" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:ems="10"
+                android:id="@+id/editTextNomeDestinatario"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tipo de documento:"
+                android:id="@+id/textView16" />
+
+
+            <Spinner
+                android:id="@+id/spinnerTipoDocumento"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.81"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                tools:theme="?android:attr/textAppearanceMedium" />
+
+
+            <!--<RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+
+                <RadioButton
+                    android:text="OAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonOAB"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Reg. Carcerário"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonRegCarcerario"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RG"
+                    android:id="@+id/radioButtonRg" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPF"
+                    android:id="@+id/radioButtonCpf" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passaport"
+                    android:id="@+id/radioButtonPasport" />
+            </RadioGroup> -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Núm. documento:"
+                android:id="@+id/textView17" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:ems="10"
+                android:id="@+id/editTextNumeroDocumento"
+                android:layout_column="2" />
+
+
+            <CheckBox
+                android:text="Recusou assinar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxRecAssDocDest" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assinar"
+                android:id="@+id/buttonSalvarDocumentoDestinatario"
+                android:layout_alignParentBottom="true"
+
+                android:drawableTop="@mipmap/ic_action_assinatura"
+                android:background="@drawable/selector_button"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
